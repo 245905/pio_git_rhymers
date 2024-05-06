@@ -2,14 +2,14 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 
-    Node last;
+    node last;
     int i;
 
     public void push(int i) {
         if (last == null)
-            last = new Node(i);
+            last = new node(i);
         else {
-            last.next = new Node(i);
+            last.next = new node(i);
             last.next.prev = last;
             last = last.next;
         }
